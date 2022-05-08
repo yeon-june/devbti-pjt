@@ -1,0 +1,182 @@
+[
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ISTJ",
+      "title": "확신의 논리주의자\n진실은 언제나 명세서에…",
+      "mbti_type": "백엔드 개발자형",
+      "best_mbti": 10,
+      "worst_mbti": 16,
+      "top_image": "ISTJ.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ISFJ",
+      "title": "신뢰도 99.9% 수호자\n믿고 맡기는 보안",
+      "mbti_type": "보안 전문가형",
+      "best_mbti": 9,
+      "worst_mbti": 15,
+      "top_image": "ISFJ.jpg"
+    }
+  },
+
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ISTP",
+      "title": "사람이 어려운 집돌이\n완벽한 칩거생활을 꿈꾼다.",
+      "mbti_type": "IoT 개발자형",
+      "best_mbti": 12,
+      "worst_mbti": 14,
+      "top_image": "ISTP.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ISFP",
+      "title": "코드 예술가\nshow me the money!",
+      "mbti_type": "블록체인 개발자형",
+      "best_mbti": 11,
+      "worst_mbti": 13,
+      "top_image": "ISFP.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "INTJ",
+      "title": "프로 팩폭러\n데이터만 있다면 뭐든지 알수있어",
+      "mbti_type": "데이터 분석가형",
+      "best_mbti": 14,
+      "worst_mbti": 12,
+      "top_image": "INTJ.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "INFJ",
+      "title": "고독한 육각형 개발자\n답답하면 너가 개발하던지",
+      "mbti_type": "웹 풀스택 개발자형",
+      "best_mbti": 13,
+      "worst_mbti": 11,
+      "top_image": "INFJ.jpg"
+    }
+  },
+
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "INTP",
+      "title": "논리적인 몽상가\n게임 안에서 나만의 로직을 꿈꾼다...☆",
+      "mbti_type": "게임 클라이언트 개발자형",
+      "best_mbti": 16,
+      "worst_mbti": 10,
+      "top_image": "INTP.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "INFP",
+      "title": "게으른 완벽주의자\n야근은 나의 숙명",
+      "mbti_type": "게임 서버 개발자형",
+      "best_mbti": 15,
+      "worst_mbti": 9,
+      "top_image": "INFP.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ESTP",
+      "title": "진취적인 통솔자\n사람이든 기계든 내 말을 들어야지",
+      "mbti_type": "임베디드 소프트웨어 개발자형",
+      "best_mbti": 2,
+      "worst_mbti": 8,
+      "top_image": "ESTP.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ESFP",
+      "title": "자유로운 영혼\n빛이 나는 APPle",
+      "mbti_type": "iOS 개발자형",
+      "best_mbti": 1,
+      "worst_mbti": 7,
+      "top_image": "ESFP.jpg"
+      }
+    },
+
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ESTJ",
+      "title": "답답한걸 못 참는 TMT\n모름지기 개발은 말이야 …....................",
+      "mbti_type": "DevOps형",
+      "best_mbti": 4,
+      "worst_mbti": 6,
+      "top_image": "ESTJ.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ESFJ",
+      "title": "눈치빠른 미어캣\n별점은 나의 힘 ",
+      "mbti_type": "Android 개발자형",
+      "best_mbti": 3,
+      "worst_mbti": 5,
+      "top_image": "ESFJ.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ENTP",
+      "title": "친구가 좋은 인싸\n인공지능과도 친구가 될 수 있을까?",
+      "mbti_type": "AI 개발자형",
+      "best_mbti": 6,
+      "worst_mbti": 4,
+      "top_image": "ENTP.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ENFP",
+      "title": "해맑은 낙천주의자\n어? 이게돼네? 헿",
+      "mbti_type": "프론트엔드 개발자형",
+      "best_mbti": 5,
+      "worst_mbti": 3,
+      "top_image": "ENFP.jpg"
+    }
+  },
+
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ENTJ",
+      "title": "일 잘하는 로봇\n삐빅 오류 발견! 해결되었습니다!",
+      "mbti_type": "QA 개발자형",
+      "best_mbti": 8,
+      "worst_mbti": 2,
+      "top_image": "ENTJ.jpg"
+    }
+  },
+  {
+    "model": "MBTI.mbti",
+    "fields": {
+      "mbti_name": "ENFJ",
+      "title": "발 넓은 사회활동가\n세상이 모두 연결될 수만 있다면,,,",
+      "mbti_type": "네트워크 개발자형",
+      "best_mbti": 7,
+      "worst_mbti": 1,
+      "top_image": "ENFJ.jpg"
+    }
+  }
+]

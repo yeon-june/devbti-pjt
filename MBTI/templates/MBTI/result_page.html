@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- 결과 타이틀 -->
+  <div class="d-flex flex-column align-items-center">
+    <div class="res-subtitle">진취적인 통솔자<br>사람이든 기계든 내 말을 들어야지</div>
+    <div class="res-maintitle px-2 my-2">'임베디드 소프트웨어 개발자형'</div>
+    <div class="res-mbti">아마도 당신은 ESTP...?</div>
+  </div>
+
+  <!-- 결과 이미지 -->
+  <img src="{% static 'ESTJ.jpg' %}" alt="" class="main-img mt-4 mb-3">
+
+  <!-- 결과 설명 -->
+  <ul class="content-font py-3 pe-3 mt-2 mb-3 border">
+    <li class="mb-2">하고 싶은 일을 만나면 브레이크가 고장난 8톤 트럭이 되고, 하기 싫은 일을 만나면 브레이크가 과하게 잘 작동되다.</li>
+    <li class="mb-2">(약속 Before) 귀찮아 귀찮아 귀찮아 나가기 싫어 나가기 싫어 => (약속 after) 오늘 너무 꿀잼이고 ~ 담에 또 봐야겠다 ~</li>
+    <li class="mb-2">팩트로 사람을 팬 다음에 다 너를 위한거야라고 한다.</li>
+    <li>어떠한 상황에서도 페이커급의 반응속도로 대처한다.</li>
+  </ul>
+
+  <!-- 나는 어떤 개발자? -->
+  <p class="develop-title">나는 어떤 개발자?</p>
+  <ul class="develop-font py-3 pe-3 mt-2 mb-5 border">
+    <li class="mb-2">하고 싶은 일을 만나면 브레이크가 고장난 8톤 트럭이 되고, 하기 싫은 일을 만나면 브레이크가 과하게 잘 작동되다.</li>
+    <li class="mb-2">(약속 Before) 귀찮아 귀찮아 귀찮아 나가기 싫어 나가기 싫어 => (약속 after) 오늘 너무 꿀잼이고 ~ 담에 또 봐야겠다 ~</li>
+    <li>어떠한 상황에서도 페이커급의 반응속도로 대처한다.</li>
+  </ul>
+  <!-- 최고 최악 궁합 -->
+  <div class="w-100 row m-0">
+    <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
+      <p class="chemi-title mb-2">우린 제법 잘 어울려요</p>
+      <p class="chemi-name">IoT 개발자</p>
+      <img src="{% get_static_prefix %}{{ best_mbti.top_image }}" alt="" class="chemi-img">
+    </div>
+    <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
+      <p class="chemi-title mb-2">당신과는 천천히</p>
+      <p class="chemi-name">풀스택 개발자</p>
+      <img src="{% get_static_prefix %}{{ worst_mbti.top_image }}" alt="" class="chemi-img">
+    </div>
+  </div>
+
+{% endblock content %}

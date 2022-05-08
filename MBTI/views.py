@@ -5,6 +5,7 @@ from .models import Mbti, BaseInfo, AnotherInfo, Howto, Question
 # Create your views here.
 
 def main_page(request):
+    # 비정상적인 접근 막기! (초기값 다르게,, 전체 문항 안고르면 메인으로 돌려버리기)
     global mbti_dict
     mbti_dict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
 
@@ -45,6 +46,7 @@ def question_page(request, question_pk):
     
     context = {
         'questions' : questions,
+        'progress': (question_pk/12)*100
     }
     
     return render(request, 'MBTI/question_page.html', context)
@@ -60,7 +62,7 @@ def choice_right(request, question_pk):
             else:
                 mbti_string += key[1]
 
-        return redirect('MBTI:result_page', mbti_string)
+        return redirect('mbti:result_page', mbti_string)
 
     new_pk = question_pk + 1
     return redirect('mbti:question_page', new_pk)
@@ -81,7 +83,7 @@ def choice_left(request, question_pk):
             else:
                 mbti_string += key[1]
 
-        return redirect('MBTI:result_page', mbti_string)
+        return redirect('mbti:result_page', mbti_string)
 
     new_pk = question_pk + 1
     return redirect('mbti:question_page', new_pk)
@@ -115,15 +117,20 @@ def share_result_page(request, mbti):
     base_infos = BaseInfo.objects.filter(mbti_id = mbti_names.pk)
     another_infos = AnotherInfo.objects.filter(mbti_id = mbti_names.pk)
     how_tos = Howto.objects.filter(mbti_id = mbti_names.pk)
+
+    best_mbti = Mbti.objects.filter(pk = mbti_names.best_mbti)[0]
+    worst_mbti = Mbti.objects.filter(pk = mbti_names.worst_mbti)[0]
     
     context = {
         'title' : mbti_names.title,
         'mbti_type': mbti_names.mbti_type,
         'mbti_name' : mbti_names.mbti_name,
         'top_image': mbti_names.top_image,
+        'best_mbti' : best_mbti,
+        'worst_mbti' : worst_mbti,
         'base_infos' : base_infos,
         'another_infos' : another_infos,
         'how_tos' : how_tos,
     }
 
-    return render(request, 'MBTI/share_result_page.html', context)
+    return render(request, 'MBTI/result_share.html', context)

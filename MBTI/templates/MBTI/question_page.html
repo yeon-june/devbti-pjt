@@ -2,30 +2,30 @@
 
 {% block content %}
   <!-- 질문 번호 -->
-  <p class="question-number mb-1">Q1</p>
+  <p class="question-number mb-1">Q{{questions.pk}}</p>
   <!-- 프로그레스 바 -->
   <div class="progress" style="height: 8px; background: #C4C4C4;">
-    <div class="progress-bar" role="progressbar" style="width: 25%; background: #9559C5;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar" role="progressbar" style="width: {{ progress }}%; background: #9559C5;" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
   <!-- 질문 -->
   <div class="question-box d-flex justify-content-start align-items-center">
-    <p class="question-font ms-1">SF 연구실 연구원들이 미로에 갇혔다…<br>알고리즘 문제를 마주친 당신의 머릿속은?<br>qmfqfmmfqkfkqkf</p>
+    <p class="question-font ms-1">{{ questions.title | linebreaksbr }}</p>
   </div>
   <!-- 대답 버튼 -->
-  <form action="{%url 'mbti:choice_left' %}" method="POST">
+  <form action="{%url 'mbti:choice_left' questions.pk %}" method="POST">
     {% csrf_token %}
     <button class="answer-box answer-font mt-3 mb-2 d-flex justify-content-center align-items-center border-0">
       <p class="m-0">
-        "우리 프로젝트 너무 잘돼서 유니콘 기업까지 폭풍 성장하는거 아니야?" 장밋빛 미래를 그린다.
+        {{ questions.choice_left | linebreaksbr }}
       </p>
     </button>
   </form>
 
-  <form action="{%url 'mbti:choice_right' %}" method="POST">
+  <form action="{%url 'mbti:choice_right' questions.pk %}" method="POST">
     {% csrf_token %}
     <button class="answer-box answer-font mt-3 mb-2 d-flex justify-content-center align-items-center border-0">
       <p class="m-0">
-        "우리 프로젝트 너무 잘돼서 유니콘 기업까지 폭풍 성장하는거 아니야?" 장밋빛 미래를 그린다.
+        {{ questions.choice_right | linebreaksbr }}
       </p>
     </button>
   </form>

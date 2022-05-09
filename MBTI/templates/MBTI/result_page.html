@@ -30,12 +30,12 @@
   <div class="w-100 row m-0">
     <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
       <p class="chemi-title mb-2">우린 제법 잘 어울려요</p>
-      <p class="chemi-name">{{ best_mbti.mbti_type }}</p>
+      <p class="chemi-name">{{ best_mbti.mbti_type }} - {{ best_mbti.mbti_name }}</p>
       <img src="{% get_static_prefix %}{{ best_mbti.top_image }}" alt="best-chemi-img" class="chemi-img">
     </div>
     <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
       <p class="chemi-title mb-2">당신과는 천천히</p>
-      <p class="chemi-name">{{ worst_mbti.mbti_type }}</p>
+      <p class="chemi-name">{{ worst_mbti.mbti_type }} - {{ worst_mbti.mbti_name }}</p>
       <img src="{% get_static_prefix %}{{ worst_mbti.top_image }}" alt="worst-chemi-img" class="chemi-img">
     </div>
   </div>

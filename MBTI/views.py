@@ -4,6 +4,7 @@ from .models import Mbti, BaseInfo, AnotherInfo, Howto, Question
 
 # Create your views here.
 
+
 def main_page(request):
     # 비정상적인 접근 막기! (초기값 다르게,, 전체 문항 안고르면 메인으로 돌려버리기)
     global mbti_dict
@@ -62,6 +63,10 @@ def choice_right(request, question_pk):
             else:
                 mbti_string += key[1]
 
+        mbtis = Mbti.objects.filter(mbti_name = mbti_string)[0]
+        mbtis.view_cnt += 1
+        mbtis.save()
+
         return redirect('mbti:result_page', mbti_string)
 
     new_pk = question_pk + 1
@@ -83,6 +88,10 @@ def choice_left(request, question_pk):
             else:
                 mbti_string += key[1]
 
+        mbtis = Mbti.objects.filter(mbti_name = mbti_string)[0]
+        mbtis.view_cnt += 1
+        mbtis.save()
+
         return redirect('mbti:result_page', mbti_string)
 
     new_pk = question_pk + 1
@@ -90,6 +99,9 @@ def choice_left(request, question_pk):
 
 
 def result_page(request, mbti):
+    global mbti_dict
+    mbti_dict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
+    
     mbti_names = Mbti.objects.filter(mbti_name = mbti)[0]
     base_infos = BaseInfo.objects.filter(mbti_id = mbti_names.pk)
     another_infos = AnotherInfo.objects.filter(mbti_id = mbti_names.pk)

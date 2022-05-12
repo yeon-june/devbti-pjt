@@ -17,13 +17,13 @@
       <li class="mt-2">{{ info.content }}</li>
     {% endfor %}
   </ul>
-
-  <!-- 나는 어떤 개발자? howto -->
+  
+  <!-- 나는 어떤 개발자? -->
   <p class="develop-title">{{mbti_type}}는?</p>
   <ul class="develop-font pt-2 pb-3 pe-3 mt-2 mb-5 border">
-    <li class="mt-2">하고 싶은 일을 만나면 브레이크가 고장난 8톤 트럭이 되고, 하기 싫은 일을 만나면 브레이크가 과하게 잘 작동되다.</li>
-    <li class="mt-2">(약속 Before) 귀찮아 귀찮아 귀찮아 나가기 싫어 나가기 싫어 => (약속 after) 오늘 너무 꿀잼이고 ~ 담에 또 봐야겠다 ~</li>
-    <li class="mt-2">어떠한 상황에서도 페이커급의 반응속도로 대처한다.</li>
+    {% for how_to in how_tos %}
+      <li class="mt-2">{{ how_to.content }}</li>
+    {% endfor %}
   </ul>
   
   <!-- 최고 최악 궁합 -->

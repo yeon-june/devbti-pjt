@@ -54,3 +54,14 @@
     <a class="mx-2" href="javascript:clipURL()"><img class="sns-img" src="{%static 'images/url.png'%}" alt=""></a>  
   </div>
 {% endblock content %}
+
+{% block script %}
+<script>
+  const mbtiDict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
+  const testList = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+  localStorage.setItem('mbtiDict', JSON.stringify(mbtiDict));
+  localStorage.setItem('testList', JSON.stringify(testList));
+
+</script>
+{% endblock script %}

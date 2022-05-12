@@ -12,7 +12,7 @@
     <p class="question-font ms-1">{{ questions.title | linebreaksbr }}</p>
   </div>
   <!-- 대답 버튼 -->
-  <form action="{%url 'mbti:choice_left' questions.pk %}" method="POST">
+  <form id="choiceLeft" method="POST" data-question-id="{{ questions.pk }}" data-question-category="{{ questions.question_category }}">
     {% csrf_token %}
     <button class="answer-box answer-font mt-3 mb-2 d-flex justify-content-center align-items-center border-0">
       <p class="m-0">
@@ -21,7 +21,7 @@
     </button>
   </form>
 
-  <form action="{%url 'mbti:choice_right' questions.pk %}" method="POST">
+  <form id="choiceRight" method="POST" data-question-id="{{ questions.pk }}" data-question-category="{{ questions.question_category }}">
     {% csrf_token %}
     <button class="answer-box answer-font mt-3 mb-2 d-flex justify-content-center align-items-center border-0">
       <p class="m-0">
@@ -32,3 +32,140 @@
   
 {% endblock content %}
 
+{% block script %}
+  <script>
+    function onLeftSubmit(event) {
+      event.preventDefault()
+
+      const questionPk = event.target.dataset.questionId
+
+      const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value
+      const config = {
+        headers: {'X-CSRFToken': csrftoken},
+      }
+
+      if (questionPk == 12) {
+        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
+        const loadList = JSON.parse(localStorage.getItem('testList'))
+        const questionType = event.target.dataset.questionCategory
+
+        loadMbti[questionType] += 1
+        
+        const indexPk = questionPk - 1
+        loadList[indexPk] = 1
+
+        localStorage.setItem('mbtiDict', JSON.stringify(loadMbti));
+        localStorage.setItem('testList', JSON.stringify(loadList));
+        
+        const newLoadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
+        const newLoadList = JSON.parse(localStorage.getItem('testList'))
+
+        if (newLoadList.includes(0)) {
+          location.href = `http://127.0.0.1:8000/mbti/`;
+        } else {
+          
+          let mbtiString = ''
+  
+          for (const [key, value] of Object.entries(newLoadMbti)) {
+            if (value >= 2) {
+              mbtiString += key[0]
+            } else {
+              mbtiString += key[1]
+            }
+          }
+  
+          location.href = `http://127.0.0.1:8000/mbti/${mbtiString}/`
+        }
+
+
+      } else {
+        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
+        const loadList = JSON.parse(localStorage.getItem('testList'))
+        const questionType = event.target.dataset.questionCategory
+        
+        for (const check of loadList) {
+          console.log(check)
+        }
+
+        loadMbti[questionType] += 1
+        
+        const indexPk = questionPk - 1
+        loadList[indexPk] = 1
+
+        localStorage.setItem('mbtiDict', JSON.stringify(loadMbti));
+        localStorage.setItem('testList', JSON.stringify(loadList));
+
+        const newPk = questionPk*1 + 1
+        
+        location.href = `http://127.0.0.1:8000/mbti/${newPk}/`    
+      }
+    }
+
+    const LeftSelect = document.querySelector(`#choiceLeft`)
+    LeftSelect.addEventListener('submit', onLeftSubmit)
+
+    function onRightSubmit(event) {
+      event.preventDefault()
+
+      const questionPk = event.target.dataset.questionId
+
+      const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value
+      const config = {
+        headers: {'X-CSRFToken': csrftoken},
+      }
+
+      if (questionPk*1 === 12) {
+        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
+        const loadList = JSON.parse(localStorage.getItem('testList'))
+        const questionType = event.target.dataset.questionCategory
+
+        loadMbti[questionType] += 1
+        
+        const indexPk = questionPk - 1
+        loadList[indexPk] = 1
+
+        localStorage.setItem('mbtiDict', JSON.stringify(loadMbti));
+        localStorage.setItem('testList', JSON.stringify(loadList));
+        
+        const newLoadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
+        const newLoadList = JSON.parse(localStorage.getItem('testList'))
+
+        for (const check of newLoadList) {
+          if (1 === check) {
+            window.location.href = 'http://www.naver.com'
+          }
+        }
+
+        let mbtiString = ''
+
+        for (const [key, value] of Object.entries(newLoadMbti)) {
+          if (value >= 2) {
+            mbtiString += key[0]
+          } else {
+            mbtiString += key[1]
+          }
+        }
+
+        location.href = `http://127.0.0.1:8000/mbti/${mbtiString}/`
+
+      } else {
+        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
+        const loadList = JSON.parse(localStorage.getItem('testList'))
+        const questionType = event.target.dataset.questionCategory
+        
+        const indexPk = questionPk - 1
+        loadList[indexPk] = 1
+
+        localStorage.setItem('mbtiDict', JSON.stringify(loadMbti));
+        localStorage.setItem('testList', JSON.stringify(loadList));
+
+        const newPk = questionPk*1 + 1
+        
+        location.href = `http://127.0.0.1:8000/mbti/${newPk}/`    
+      }
+    }
+
+    const RightSelect = document.querySelector(`#choiceRight`)
+    RightSelect.addEventListener('submit', onRightSubmit)
+  </script>
+{% endblock script %}

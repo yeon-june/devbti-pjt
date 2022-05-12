@@ -1,3 +1,5 @@
+
+
 {% extends 'base.html' %}
 {% load static %}
 
@@ -12,7 +14,7 @@
     </span>
   </div>
   <img src="{%static 'main.gif'%}" alt="" class="main-img">
-  <a href="{%url 'mbti:question_page' question_pk=1 %}" class="mt-4 mb-5 d-flex justify-content-center align-items-center start-box">
+  <a href="javascript:click()" class="mt-4 mb-5 d-flex justify-content-center align-items-center start-box">
     <span class="start-font">
       START
     </span>
@@ -31,3 +33,17 @@
     <p class="infofont-l">{{ min_mbti }} '{{ min_mbti_type }}'</p>
   </div>
 {% endblock content %}
+
+{% block script %}
+<script>
+  function click() {
+    const mbtiDict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
+    const testList = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+    localStorage.setItem('mbtiDict', JSON.stringify(mbtiDict));
+    localStorage.setItem('testList', JSON.stringify(testList));
+
+    location.href = `1/`
+  }
+</script>
+{% endblock script %}

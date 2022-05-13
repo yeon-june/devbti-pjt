@@ -1,64 +1,83 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block copyJs %}
+  <script src ="{% static 'result.js' %}"></script>
+{% endblock copyJs %}
+
 {% block content %}
-  <!-- 결과 타이틀 -->
-  <div class="d-flex flex-column align-items-center">
-    <div class="res-subtitle">{{title | linebreaksbr}}</div>
-    <div class="res-maintitle px-2 my-2">'{{ mbti_type }}'</div>
-    <div class="res-mbti">아마도 당신은 {{ mbti_name }}...?</div>
+  <div id="loading">
+    <img src="{% static 'loading.gif' %}" alt="">
   </div>
-
-  <!-- 결과 이미지 -->
-  <img src="{% get_static_prefix %}{{ top_image }}" alt="res-main-img" class="main-img mt-4 mb-3">
-
-  <!-- 결과 설명 -->
-  <ul class="content-font pt-2 pb-3 pe-3 mt-2 mb-3 border">
-    {% for info in base_infos %}
-      <li class="mt-2">{{ info.content }}</li>
-    {% endfor %}
-  </ul>
-  
-  <!-- 나는 어떤 개발자? -->
-  <p class="develop-title">{{mbti_type}}는?</p>
-  <ul class="develop-font pt-2 pb-3 pe-3 mt-2 mb-5 border">
-    {% for how_to in how_tos %}
-      <li class="mt-2">{{ how_to.content }}</li>
-    {% endfor %}
-  </ul>
-  
-  <!-- 최고 최악 궁합 -->
-  <div class="w-100 row m-0">
-    <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
-      <p class="chemi-title mb-2">우린 제법 잘 어울려요</p>
-      <p class="chemi-name">{{ best_mbti.mbti_type }} - {{ best_mbti.mbti_name }}</p>
-      <img src="{% get_static_prefix %}{{ best_mbti.top_image }}" alt="best-chemi-img" class="chemi-img">
+  <div id="result" style="display: none;">
+    <!-- 결과 타이틀 -->
+    <div class="d-flex flex-column align-items-center">
+      <div class="res-subtitle">{{title | linebreaksbr}}</div>
+      <div class="res-maintitle px-2 my-2">'{{ mbti_type }}'</div>
+      <div class="res-mbti">아마도 당신은 {{ mbti_name }}...?</div>
     </div>
-    <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
-      <p class="chemi-title mb-2">당신과는 천천히</p>
-      <p class="chemi-name">{{ worst_mbti.mbti_type }} - {{ worst_mbti.mbti_name }}</p>
-      <img src="{% get_static_prefix %}{{ worst_mbti.top_image }}" alt="worst-chemi-img" class="chemi-img">
+  
+    <!-- 결과 이미지 -->
+    
+    <img src="{% get_static_prefix %}{{ top_image }}" alt="res-main-img" class="main-img mt-4 mb-3">
+  
+    <!-- 결과 설명 -->
+    <ul class="content-font pt-2 pb-3 pe-3 mt-2 mb-3 border">
+      {% for info in base_infos %}
+        <li class="mt-2">{{ info.content }}</li>
+      {% endfor %}
+    </ul>
+    
+    <!-- 나는 어떤 개발자? -->
+    <p class="develop-title">{{mbti_type}}는?</p>
+    <ul class="develop-font pt-2 pb-3 pe-3 mt-2 mb-5 border">
+      {% for how_to in how_tos %}
+        <li class="mt-2">{{ how_to.content }}</li>
+      {% endfor %}
+    </ul>
+    
+    <!-- 최고 최악 궁합 -->
+    <div class="w-100 row m-0">
+      <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
+        <p class="chemi-title mb-2">우린 제법 잘 어울려요</p>
+        <p class="chemi-name">{{ best_mbti.mbti_type }} - {{ best_mbti.mbti_name }}</p>
+        <img src="{% get_static_prefix %}{{ best_mbti.top_image }}" alt="best-chemi-img" class="chemi-img">
+      </div>
+      <div class="w-50 d-flex col-6 flex-column align-items-center p-0">
+        <p class="chemi-title mb-2">당신과는 천천히</p>
+        <p class="chemi-name">{{ worst_mbti.mbti_type }} - {{ worst_mbti.mbti_name }}</p>
+        <img src="{% get_static_prefix %}{{ worst_mbti.top_image }}" alt="worst-chemi-img" class="chemi-img">
+      </div>
     </div>
-  </div>
-
-  <hr class="my-3">
-
-  <a href="{% url 'mbti:main_page' %}" class="mt-2 mb-4 d-flex justify-content-center align-items-center start-box">
-    <span class="start-font">
-      다시하기
-    </span>
-  </a>
-  <div class="d-flex justify-content-center my-2">
-    <a id="btnTwitter" class="mx-2" href="javascript:shareTwitter()"><img class="sns-img" src="{%static 'images/icon-twitter.png'%}" alt=""></a>
-    <a id="btnFacebook" class="mx-2" href="javascript:shareFacebook()"><img class="sns-img" src="{%static 'images/icon-facebook.png'%}" alt=""></a>    
-    <a id="btnKakao" class="mx-2" href="javascript:shareKakao()"><img class="sns-img" src="{%static 'images/icon-kakao.png'%}" alt=""></a>  
-    <a class="mx-2" href="javascript:clipURL()"><img class="sns-img" src="{%static 'images/url.png'%}" alt=""></a>  
+  
+    <hr class="my-3">
+  
+    <a href="{% url 'mbti:main_page' %}" class="mt-2 mb-4 d-flex justify-content-center align-items-center start-box">
+      <span class="start-font">
+        다시하기
+      </span>
+    </a>
+    <div class="d-flex justify-content-center my-2">
+      <a id="btnTwitter" class="mx-2" href="javascript:shareTwitter()"><img class="sns-img" src="{%static 'images/icon-twitter.png'%}" alt=""></a>
+      <a id="btnFacebook" class="mx-2" href="javascript:shareFacebook()"><img class="sns-img" src="{%static 'images/icon-facebook.png'%}" alt=""></a>    
+      <a id="btnKakao" class="mx-2" href="javascript:shareKakao()"><img class="sns-img" src="{%static 'images/icon-kakao.png'%}" alt=""></a>  
+      <a class="mx-2" href="javascript:clipURL()"><img class="sns-img" src="{%static 'images/url.png'%}" alt=""></a>  
+    </div>
   </div>
 {% endblock content %}
 
 {% block script %}
 <script>
+  // 로딩할 때 필요한 함수
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const loading = document.querySelector('#loading')
+    const result = document.querySelector('#result')
+    loading.style.display = "none"
+    result.style.display = "block"
+  })
+
   const mbtiDict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
-  const testList = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  const testList = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
   localStorage.setItem('mbtiDict', JSON.stringify(mbtiDict));
   localStorage.setItem('testList', JSON.stringify(testList));

@@ -20,7 +20,13 @@ function clipURL() {
   textarea.select()
   document.execCommand("copy")
   document.body.removeChild(textarea)
-  alert("URL이 복사되었습니다.")
+  swal({
+    // swal html 태그 추가 후 클래스 입히기
+    text: "url이 복사되었습니다.",
+    timer: 1500,
+    button: false,
+    className: "swal-custom"
+  })
 }
 
 

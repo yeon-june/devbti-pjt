@@ -6,13 +6,14 @@
 {% endblock copyJs %}
 
 {% block content %}
-  <div id="loading">
-    <img src="{% static 'loading.gif' %}" alt="">
+  <!-- 로딩 이미지 -->
+  <div id="loading" class="w-100 d-flex align-items-center h-90vh">
+    <img src="{% static 'loading_img.gif' %}" alt="" class="w-100">
   </div>
   <div id="result" style="display: none;">
     <!-- 결과 타이틀 -->
     <div class="d-flex flex-column align-items-center">
-      <div class="res-subtitle">{{title | linebreaksbr}}</div>
+      <div class="res-subtitle">{{ title | linebreaksbr }}</div>
       <div class="res-maintitle px-2 my-2">'{{ mbti_type }}'</div>
       <div class="res-mbti">아마도 당신은 {{ mbti_name }}...?</div>
     </div>
@@ -29,7 +30,7 @@
     </ul>
     
     <!-- 나는 어떤 개발자? -->
-    <p class="develop-title">{{mbti_type}}는?</p>
+    <p class="develop-title">{{ mbti_type }}는?</p>
     <ul class="develop-font pt-2 pb-3 pe-3 mt-2 mb-5 border">
       {% for how_to in how_tos %}
         <li class="mt-2">{{ how_to.content }}</li>
@@ -69,11 +70,16 @@
 {% block script %}
 <script>
   // 로딩할 때 필요한 함수
+  
   document.addEventListener('DOMContentLoaded', (event) => {
-    const loading = document.querySelector('#loading')
-    const result = document.querySelector('#result')
-    loading.style.display = "none"
-    result.style.display = "block"
+    setTimeout(function() {
+      const loading = document.querySelector('#loading')
+      const result = document.querySelector('#result')
+      loading.classList.remove('d-flex')
+      loading.classList.remove('align-items-center')
+      loading.style.display = 'none'
+      result.style.display = 'block'
+    }, 30);
   })
 
   const mbtiDict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}

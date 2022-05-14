@@ -219,6 +219,14 @@ body {
   height: 80vh;
 }
 
+.swal-custom {
+  width: auto;
+}
+
+.swal-text {
+  font-weight: 500 !important;
+  margin: 25px !important;
+}
 /* --------------------------------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   .my-container {

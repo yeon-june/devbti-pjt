@@ -219,14 +219,6 @@ body {
   height: 80vh;
 }
 
-.swal-custom {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  height: 100px;
-}
-
 /* --------------------------------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   .my-container {

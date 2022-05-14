@@ -79,13 +79,11 @@
       loading.classList.remove('align-items-center')
       loading.style.display = 'none'
       result.style.display = 'block'
-    }, 30);
+    }, 3000);
   })
 
-  const mbtiDict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
   const testList = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-  localStorage.setItem('mbtiDict', JSON.stringify(mbtiDict));
   localStorage.setItem('testList', JSON.stringify(testList));
 
 </script>

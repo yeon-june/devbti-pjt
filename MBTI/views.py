@@ -59,7 +59,6 @@ def result_page(request, mbti):
     
     mbti_names = Mbti.objects.filter(mbti_name = mbti)[0]
     base_infos = BaseInfo.objects.filter(mbti_id = mbti_names.pk)
-    another_infos = AnotherInfo.objects.filter(mbti_id = mbti_names.pk)
     how_tos = Howto.objects.filter(mbti_id = mbti_names.pk)
     
     best_mbti = Mbti.objects.filter(pk = mbti_names.best_mbti)[0]
@@ -73,7 +72,6 @@ def result_page(request, mbti):
         'best_mbti' : best_mbti,
         'worst_mbti' : worst_mbti,
         'base_infos' : base_infos,
-        'another_infos' : another_infos,
         'how_tos' : how_tos,
     }
 
@@ -83,7 +81,6 @@ def result_page(request, mbti):
 def share_result_page(request, mbti):
     mbti_names = Mbti.objects.filter(mbti_name = mbti)[0]
     base_infos = BaseInfo.objects.filter(mbti_id = mbti_names.pk)
-    another_infos = AnotherInfo.objects.filter(mbti_id = mbti_names.pk)
     how_tos = Howto.objects.filter(mbti_id = mbti_names.pk)
 
     best_mbti = Mbti.objects.filter(pk = mbti_names.best_mbti)[0]
@@ -97,7 +94,6 @@ def share_result_page(request, mbti):
         'best_mbti' : best_mbti,
         'worst_mbti' : worst_mbti,
         'base_infos' : base_infos,
-        'another_infos' : another_infos,
         'how_tos' : how_tos,
     }
 

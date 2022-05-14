@@ -49,7 +49,7 @@
         const loadList = JSON.parse(localStorage.getItem('testList'))
         const questionType = event.target.dataset.questionCategory
 
-        loadMbti[questionType] += 1
+        loadMbti[questionType] = 1
         
         const indexPk = questionPk - 1
         loadList[indexPk] = 1
@@ -65,29 +65,42 @@
         } else {
           
           let mbtiString = ''
-  
+          const lastMbti = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
+          //1,5,9-EI 2,4,7-TF 3,8,11-PJ 6,10,12-NS
+
           for (const [key, value] of Object.entries(newLoadMbti)) {
+            if (value == 1) {
+              if (['1','5','9'].includes(key)) {
+                lastMbti.EI += 1
+              } else if (['2','4','7'].includes(key)) {
+                lastMbti.TF += 1
+              } else if (['3','8','11'].includes(key)) {
+                lastMbti.PJ += 1
+              } else {
+                lastMbti.NS += 1
+              }
+          }
+        }
+
+          for (const [key, value] of Object.entries(lastMbti)) {
             if (value >= 2) {
               mbtiString += key[0]
             } else {
               mbtiString += key[1]
             }
           }
-  
+
           location.href = `/mbti/${mbtiString}/`
         }
+      
 
 
       } else {
         const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
         const loadList = JSON.parse(localStorage.getItem('testList'))
         const questionType = event.target.dataset.questionCategory
-        
-        for (const check of loadList) {
-          console.log(check)
-        }
 
-        loadMbti[questionType] += 1
+        loadMbti[questionPk] = 1
         
         const indexPk = questionPk - 1
         loadList[indexPk] = 1
@@ -97,7 +110,7 @@
 
         const newPk = questionPk*1 + 1
         
-        location.href = `/mbti/${newPk}/`    
+        location.href = `http://127.0.0.1:8000/mbti/${newPk}/`    
       }
     }
 
@@ -119,7 +132,7 @@
         const loadList = JSON.parse(localStorage.getItem('testList'))
         const questionType = event.target.dataset.questionCategory
 
-        loadMbti[questionType] += 1
+        loadMbti[questionType] = 0
         
         const indexPk = questionPk - 1
         loadList[indexPk] = 1
@@ -135,15 +148,31 @@
         } else {
           
           let mbtiString = ''
-  
+          const lastMbti = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
+          //1,5,9-EI 2,4,7-TF 3,8,11-PJ 6,10,12-NS
+
           for (const [key, value] of Object.entries(newLoadMbti)) {
+            if (value == 1) {
+              if (['1','5','9'].includes(key)) {
+                lastMbti.EI += 1
+              } else if (['2','4','7'].includes(key)) {
+                lastMbti.TF += 1
+              } else if (['3','8','11'].includes(key)) {
+                lastMbti.PJ += 1
+              } else {
+                lastMbti.NS += 1
+              }
+            }
+          }
+          
+          for (const [key, value] of Object.entries(lastMbti)) {
             if (value >= 2) {
               mbtiString += key[0]
             } else {
               mbtiString += key[1]
             }
           }
-  
+      
           location.href = `/mbti/${mbtiString}/`
         }
 
@@ -152,6 +181,7 @@
         const loadList = JSON.parse(localStorage.getItem('testList'))
         const questionType = event.target.dataset.questionCategory
         
+        loadMbti[questionPk] = 0
         const indexPk = questionPk - 1
         loadList[indexPk] = 1
 

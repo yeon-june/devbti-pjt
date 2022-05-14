@@ -23,14 +23,6 @@ class BaseInfo(models.Model):
     )
     content = models.TextField()
 
-class AnotherInfo(models.Model):
-    mbti = models.ForeignKey(
-        Mbti,
-        on_delete=models.CASCADE,
-        related_name= 'another_info'
-    )
-    content = models.TextField()
-
 class Howto(models.Model):
     mbti = models.ForeignKey(
         Mbti,

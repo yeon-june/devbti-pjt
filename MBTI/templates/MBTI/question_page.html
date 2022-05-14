@@ -61,7 +61,7 @@
         const newLoadList = JSON.parse(localStorage.getItem('testList'))
 
         if (newLoadList.includes(0)) {
-          location.href = `http://127.0.0.1:8000/mbti/`;
+          location.href = `/mbti/`;
         } else {
           
           let mbtiString = ''
@@ -74,7 +74,7 @@
             }
           }
   
-          location.href = `http://127.0.0.1:8000/mbti/${mbtiString}/`
+          location.href = `/mbti/${mbtiString}/`
         }
 
 
@@ -97,7 +97,7 @@
 
         const newPk = questionPk*1 + 1
         
-        location.href = `http://127.0.0.1:8000/mbti/${newPk}/`    
+        location.href = `/mbti/${newPk}/`    
       }
     }
 
@@ -130,23 +130,22 @@
         const newLoadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
         const newLoadList = JSON.parse(localStorage.getItem('testList'))
 
-        for (const check of newLoadList) {
-          if (1 === check) {
-            window.location.href = 'http://www.naver.com'
+        if (newLoadList.includes(0)) {
+          location.href = `/mbti/`;
+        } else {
+          
+          let mbtiString = ''
+  
+          for (const [key, value] of Object.entries(newLoadMbti)) {
+            if (value >= 2) {
+              mbtiString += key[0]
+            } else {
+              mbtiString += key[1]
+            }
           }
+  
+          location.href = `/mbti/${mbtiString}/`
         }
-
-        let mbtiString = ''
-
-        for (const [key, value] of Object.entries(newLoadMbti)) {
-          if (value >= 2) {
-            mbtiString += key[0]
-          } else {
-            mbtiString += key[1]
-          }
-        }
-
-        location.href = `http://127.0.0.1:8000/mbti/${mbtiString}/`
 
       } else {
         const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
@@ -161,7 +160,7 @@
 
         const newPk = questionPk*1 + 1
         
-        location.href = `http://127.0.0.1:8000/mbti/${newPk}/`    
+        location.href = `/mbti/${newPk}/`    
       }
     }
 

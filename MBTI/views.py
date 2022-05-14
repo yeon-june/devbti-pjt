@@ -1,6 +1,6 @@
 from django.shortcuts import (render, redirect, get_object_or_404)
 
-from .models import Mbti, BaseInfo, AnotherInfo, Howto, Question
+from .models import Mbti, BaseInfo, Howto, Question
 
 # Create your views here.
 
@@ -53,51 +53,6 @@ def question_page(request, question_pk):
     return render(request, 'MBTI/question_page.html', context)
 
 
-def choice_right(request, question_pk):
-    if question_pk == 12:
-        mbti_string = ''
-
-        for key, value in mbti_dict.items():
-            if value >= 2:
-                mbti_string += key[0]
-            else:
-                mbti_string += key[1]
-
-        mbtis = Mbti.objects.filter(mbti_name = mbti_string)[0]
-        mbtis.view_cnt += 1
-        mbtis.save()
-
-        return redirect('mbti:result_page', mbti_string)
-
-    new_pk = question_pk + 1
-    return redirect('mbti:question_page', new_pk)
-
-
-def choice_left(request, question_pk):
-    questions = get_object_or_404(Question, pk = question_pk)
-    category = questions.question_category
-    
-    mbti_dict[category] += 1
-
-    if question_pk == 12:
-        mbti_string = ''
-
-        for key, value in mbti_dict.items():
-            if value >= 2:
-                mbti_string += key[0]
-            else:
-                mbti_string += key[1]
-
-        mbtis = Mbti.objects.filter(mbti_name = mbti_string)[0]
-        mbtis.view_cnt += 1
-        mbtis.save()
-
-        return redirect('mbti:result_page', mbti_string)
-
-    new_pk = question_pk + 1
-    return redirect('mbti:question_page', new_pk)
-
-
 def result_page(request, mbti):
     global mbti_dict
     mbti_dict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
@@ -123,6 +78,7 @@ def result_page(request, mbti):
     }
 
     return render(request, 'MBTI/result_page.html', context)
+
 
 def share_result_page(request, mbti):
     mbti_names = Mbti.objects.filter(mbti_name = mbti)[0]

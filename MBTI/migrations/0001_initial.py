@@ -51,12 +51,4 @@ class Migration(migrations.Migration):
                 ('mbti', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='base_info', to='MBTI.mbti')),
             ],
         ),
-        migrations.CreateModel(
-            name='AnotherInfo',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('content', models.TextField()),
-                ('mbti', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='another_info', to='MBTI.mbti')),
-            ],
-        ),
     ]

@@ -43,7 +43,6 @@
 
     function onLeftSubmit(event) {
       event.preventDefault()
-
       const questionPk = event.target.dataset.questionId
 
       const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value
@@ -53,10 +52,6 @@
 
       if (questionPk*1 === 12) {
         const questionType = event.target.dataset.questionCategory
-
-        if (loadMbti === null) {
-          location.href = `/mbti/`;
-        }
 
         loadMbti[questionType] = 1
         
@@ -110,13 +105,8 @@
         }
       
 
-
       } else {
         const questionType = event.target.dataset.questionCategory
-
-        if (loadMbti === null) {
-          location.href = `/mbti/`;
-        }
 
         loadMbti[questionPk] = 1
         
@@ -147,10 +137,6 @@
 
       if (questionPk*1 === 12) {
         const questionType = event.target.dataset.questionCategory
-
-        if (loadMbti === null) {
-          location.href = `/mbti/`;
-        }
 
         loadMbti[questionType] = 0
         
@@ -199,10 +185,6 @@
 
       } else {
         const questionType = event.target.dataset.questionCategory
-        
-        if (loadMbti === null) {
-          location.href = `/mbti/`;
-        }
 
         loadMbti[questionPk] = 0
         const indexPk = questionPk - 1

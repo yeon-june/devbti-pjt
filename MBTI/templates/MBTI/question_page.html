@@ -34,6 +34,13 @@
 
 {% block script %}
   <script>
+    const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
+    const loadList = JSON.parse(localStorage.getItem('testList'))
+
+    if (loadMbti === null) {
+      location.href = `/mbti/`;
+    }
+
     function onLeftSubmit(event) {
       event.preventDefault()
 
@@ -44,10 +51,12 @@
         headers: {'X-CSRFToken': csrftoken},
       }
 
-      if (questionPk == 12) {
-        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
-        const loadList = JSON.parse(localStorage.getItem('testList'))
+      if (questionPk*1 === 12) {
         const questionType = event.target.dataset.questionCategory
+
+        if (loadMbti === null) {
+          location.href = `/mbti/`;
+        }
 
         loadMbti[questionType] = 1
         
@@ -96,9 +105,11 @@
 
 
       } else {
-        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
-        const loadList = JSON.parse(localStorage.getItem('testList'))
         const questionType = event.target.dataset.questionCategory
+
+        if (loadMbti === null) {
+          location.href = `/mbti/`;
+        }
 
         loadMbti[questionPk] = 1
         
@@ -128,9 +139,11 @@
       }
 
       if (questionPk*1 === 12) {
-        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
-        const loadList = JSON.parse(localStorage.getItem('testList'))
         const questionType = event.target.dataset.questionCategory
+
+        if (loadMbti === null) {
+          location.href = `/mbti/`;
+        }
 
         loadMbti[questionType] = 0
         
@@ -177,10 +190,12 @@
         }
 
       } else {
-        const loadMbti = JSON.parse(localStorage.getItem('mbtiDict'))
-        const loadList = JSON.parse(localStorage.getItem('testList'))
         const questionType = event.target.dataset.questionCategory
         
+        if (loadMbti === null) {
+          location.href = `/mbti/`;
+        }
+
         loadMbti[questionPk] = 0
         const indexPk = questionPk - 1
         loadList[indexPk] = 1

@@ -61,6 +61,7 @@
         const newLoadList = JSON.parse(localStorage.getItem('testList'))
 
         if (newLoadList.includes(0)) {
+          alert('응답하지 않은 문항이 있습니다. 메인 페이지로 돌아갑니다.')
           location.href = `/mbti/`;
         } else {
           
@@ -144,6 +145,7 @@
         const newLoadList = JSON.parse(localStorage.getItem('testList'))
 
         if (newLoadList.includes(0)) {
+          alert('응답하지 않은 문항이 있습니다. 메인 페이지로 돌아갑니다.')
           location.href = `/mbti/`;
         } else {
           

@@ -61,8 +61,14 @@
         const newLoadList = JSON.parse(localStorage.getItem('testList'))
 
         if (newLoadList.includes(0)) {
-          alert('응답하지 않은 문항이 있습니다. 메인 페이지로 돌아갑니다.')
-          location.href = `/mbti/`;
+          swal({
+            // swal html 태그 추가 후 클래스 입히기
+            text: "응답하지 않은 문항이 있습니다. 메인 페이지로 돌아갑니다.",
+            button: true,
+            className: "swal-custom"
+          }).then(function(){location.href = `/mbti/`;})
+          //alert('응답하지 않은 문항이 있습니다. 메인 페이지로 돌아갑니다.')
+          
         } else {
           
           let mbtiString = ''

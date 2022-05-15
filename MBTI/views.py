@@ -7,9 +7,6 @@ from .models import Mbti, BaseInfo, Howto, Question
 
 def main_page(request):
     # 비정상적인 접근 막기! (초기값 다르게,, 전체 문항 안고르면 메인으로 돌려버리기)
-    global mbti_dict
-    mbti_dict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
-
     mbties = Mbti.objects.all()
     viewers = 0
     max_viewers = 0
@@ -54,9 +51,6 @@ def question_page(request, question_pk):
 
 
 def result_page(request, mbti):
-    global mbti_dict
-    mbti_dict = {'EI':0, 'NS':0, 'TF':0, 'PJ':0}
-    
     mbti_names = Mbti.objects.filter(mbti_name = mbti)[0]
     base_infos = BaseInfo.objects.filter(mbti_id = mbti_names.pk)
     how_tos = Howto.objects.filter(mbti_id = mbti_names.pk)

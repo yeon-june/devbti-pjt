@@ -219,6 +219,10 @@ body {
   height: 80vh;
 }
 
+.swal-footer {
+  margin-top: 0 !important;
+}
+
 .swal-custom {
   width: auto;
 }
@@ -227,6 +231,7 @@ body {
   font-weight: 500 !important;
   margin: 25px !important;
 }
+
 /* --------------------------------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   .my-container {

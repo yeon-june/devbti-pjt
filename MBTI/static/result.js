@@ -1,12 +1,12 @@
 function shareTwitter() {
-  const sendText = "개발자 mbti"; // 전달할 텍스트
-  const sendUrl = "devpad.tistory.com/"; // 전달할 URL
+  const sendText = "개발티콘"; // 전달할 텍스트
+  const sendUrl = document.URL // 전달할 URL
   window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl)
 }
 
 
 function shareFacebook() {
-  const sendUrl = "devpad.tistory.com/"; // 전달할 URL
+  const sendUrl = document.URL // 전달할 URL
   window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl)
 }
 

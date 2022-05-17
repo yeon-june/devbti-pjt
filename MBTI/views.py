@@ -40,24 +40,34 @@ def main_page(request):
 
 
 def question_page(request, question_pk):
+    global flag
+    if question_pk == 12:
+        flag = 1
+
     questions = get_object_or_404(Question, pk = question_pk)
-    
+
     context = {
         'questions' : questions,
         'progress': (question_pk/12)*100
     }
-    
+
     return render(request, 'MBTI/question_page.html', context)
 
 
 def result_page(request, mbti):
+    global flag
     mbti_names = Mbti.objects.filter(mbti_name = mbti)[0]
     base_infos = BaseInfo.objects.filter(mbti_id = mbti_names.pk)
     how_tos = Howto.objects.filter(mbti_id = mbti_names.pk)
-    
+
     best_mbti = Mbti.objects.filter(pk = mbti_names.best_mbti)[0]
     worst_mbti = Mbti.objects.filter(pk = mbti_names.worst_mbti)[0]
-    
+
+    if flag:
+        mbti_names.view_cnt += 1
+        mbti_names.save()
+        flag = 0
+
     context = {
         'title' : mbti_names.title,
         'mbti_type': mbti_names.mbti_type,

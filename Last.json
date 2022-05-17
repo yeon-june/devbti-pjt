@@ -1,0 +1,1085 @@
+[{
+	"model": "MBTI.question",
+	"pk": 1,
+	"fields": {
+		"title": "당신의 선택은?",
+		"choice_right": "좋은 경치와 코딩,\r\n나만 있다면 행복할 수 있어.",
+		"choice_left": "복작복작 팀원들과 함께 하는 코딩,\r\n생각만 해도 행복해.",
+		"question_category": "EI"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 2,
+	"fields": {
+		"title": "“코드가 계속 에러가 나서 밤샜어.. 너무 힘들다ㅠ” 라고 말하는 친구, 당신의 대답은?",
+		"choice_right": "ㅠㅠ 너무 힘들었겠다.. 고생했어!\r\n오늘 푹 쉬자!!",
+		"choice_left": "이제 문제는 해결됐어? \r\n내가 코드 한번 같이 봐줄까?",
+		"question_category": "TF"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 3,
+	"fields": {
+		"title": "프로젝트를 시작한 당신,\r\n당신이 가장 먼저 할 행동은?",
+		"choice_right": "노션 페이지부터 만들고 본다!\r\n목표 일정 기획 모든 걸 기록!",
+		"choice_left": "일단 시작하고 생각하자~ \r\n회의부터 해보지 뭐!",
+		"question_category": "PJ"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 4,
+	"fields": {
+		"title": "오늘은 부서배치 날!!\r\n당신이 더 들어가고 싶은 팀은?",
+		"choice_right": "사람이 좋아야지!!\r\n좋은 사람들이 모인 팀",
+		"choice_left": "성과 좋은게 최고지!!\r\n성과가 좋은 팀",
+		"question_category": "TF"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 5,
+	"fields": {
+		"title": "내가 작성한 코드에 대해 질문해오는 동료,\r\n당신의 생각은?",
+		"choice_right": "질문한 거 얼른 대답해주고 보내야겠다…",
+		"choice_left": "마침 친해지고 싶던 동료인데,\r\n이번 기회에 친해져 봐야지!",
+		"question_category": "EI"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 6,
+	"fields": {
+		"title": "SF 연구실 연구원들이 미로에 갇혔다...\r\n알고리즘 문제를 마주친 당신의 머릿속은?",
+		"choice_right": "어떤 알고리즘을 써야 할까?\r\nDFS? BFS? 시간 제한은 얼마지? \r\n문제에 집중",
+		"choice_left": "연구원들이 왜 갇혔지..?\r\n위험한 상황인가? 무슨 미로지?\r\n상상력 폭발",
+		"question_category": "NS"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 7,
+	"fields": {
+		"title": "프로젝트 중 의견 충돌이 발생했다.\r\n의견을 전달할 때 당신의 생각은?",
+		"choice_right": "상대방이 기분 나쁘지 않게\r\n내 의견을 전달해야 해!",
+		"choice_left": "내 생각과 논리가 맞다는 걸\r\n완벽하게 증명해야지!",
+		"question_category": "TF"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 8,
+	"fields": {
+		"title": "수고한 첫 출근의 마무리!\r\n퇴근하기 전 나는?",
+		"choice_right": "내일 할 일을 미리 정리해두고 간다.",
+		"choice_left": "자리만 정리하고 떠난다.",
+		"question_category": "PJ"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 9,
+	"fields": {
+		"title": "점심 시간이 다 됐는데 아무도 일어나지 않는다.\r\n어떻게 할까?",
+		"choice_right": "누가 물어보기 전까지\r\n눈치 보면서 가만히 있는다.",
+		"choice_left": "“식사 안하세요..?”\r\n옆 동료에게 슬쩍 물어본다.",
+		"question_category": "EI"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 10,
+	"fields": {
+		"title": "지인과 새롭게 시작한 프로젝트, \r\n첫 회의 날 당신의 모습은?",
+		"choice_right": "“회의에서 뭘 정해야 될까?\r\n프로젝트 목표? 서비스 스펙?”\r\n지금 해야 할 일 리스트업",
+		"choice_left": "“우리 프로젝트 너무 잘돼서\r\n폭풍 성장하는거 아니야?”\r\n장밋빛 미래를 그린다.",
+		"question_category": "NS"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 11,
+	"fields": {
+		"title": "휴가를 써서 여행을 가려고 한다.\r\n당신이 먼저 할 행동은?",
+		"choice_right": "음 휴가 날짜가… 3일 정도니까!\r\n어디에 갈지 찾아봐야겠다.",
+		"choice_left": "지금 당장 제주도가 가고 싶은데?\r\n비행기표부터 끊는다.",
+		"question_category": "PJ"
+	}
+}, {
+	"model": "MBTI.question",
+	"pk": 12,
+	"fields": {
+		"title": "아무리 봐도 이해가 안되는 보고서..\r\n선배에게 물어보니 무조건 외우라고 하는데,\r\n내 속마음은?",
+		"choice_right": "일단 외우라고 하니까 외워봐야지..!",
+		"choice_left": "이해를 못하는데 어떻게 외우지...?",
+		"question_category": "NS"
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 1,
+	"fields": {
+		"mbti_name": "ISTJ",
+		"title": "확신의 논리주의자\r\n진실은 언제나 명세서에…",
+		"mbti_type": "백엔드 개발자",
+		"best_mbti": 10,
+		"worst_mbti": 16,
+		"top_image": "ISTJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 2,
+	"fields": {
+		"mbti_name": "ISFJ",
+		"title": "신뢰도 99.9% 수호자\r\n믿고 맡기는 보안",
+		"mbti_type": "보안 전문가",
+		"best_mbti": 9,
+		"worst_mbti": 15,
+		"top_image": "ISFJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 3,
+	"fields": {
+		"mbti_name": "ISTP",
+		"title": "사람이 어려운 집돌이\r\n완벽한 칩거 생활을 꿈꾼다.",
+		"mbti_type": "IoT 개발자",
+		"best_mbti": 12,
+		"worst_mbti": 14,
+		"top_image": "ISTP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 4,
+	"fields": {
+		"mbti_name": "ISFP",
+		"title": "코드 예술가\r\nShow me the money!",
+		"mbti_type": "블록체인 개발자",
+		"best_mbti": 11,
+		"worst_mbti": 13,
+		"top_image": "ISFP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 5,
+	"fields": {
+		"mbti_name": "INTJ",
+		"title": "프로 팩폭러\r\n데이터만 있다면 뭐든지 알 수 있어!!",
+		"mbti_type": "데이터 분석가",
+		"best_mbti": 14,
+		"worst_mbti": 12,
+		"top_image": "INTJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 6,
+	"fields": {
+		"mbti_name": "INFJ",
+		"title": "고독한 육각형 개발자\r\n답답하면 너가 개발하든지",
+		"mbti_type": "웹 풀스택 개발자",
+		"best_mbti": 13,
+		"worst_mbti": 11,
+		"top_image": "INFJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 7,
+	"fields": {
+		"mbti_name": "INTP",
+		"title": "논리적인 몽상가\r\n게임 안에서 나만의 로직을 꿈꾼다...☆",
+		"mbti_type": "게임 클라이언트 개발자",
+		"best_mbti": 16,
+		"worst_mbti": 10,
+		"top_image": "INTP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 8,
+	"fields": {
+		"mbti_name": "INFP",
+		"title": "게으른 완벽주의자\r\n야근은 나의 숙명...",
+		"mbti_type": "게임 서버 개발자",
+		"best_mbti": 15,
+		"worst_mbti": 9,
+		"top_image": "INFP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 9,
+	"fields": {
+		"mbti_name": "ESTP",
+		"title": "진취적인 통솔자\r\n사람이든 기계든 내 말을 들어야지",
+		"mbti_type": "임베디드 소프트웨어 개발자",
+		"best_mbti": 2,
+		"worst_mbti": 8,
+		"top_image": "ESTP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 10,
+	"fields": {
+		"mbti_name": "ESFP",
+		"title": "자유로운 영혼\r\n빛이 나는 APPle",
+		"mbti_type": "iOS 개발자",
+		"best_mbti": 1,
+		"worst_mbti": 7,
+		"top_image": "ESFP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 11,
+	"fields": {
+		"mbti_name": "ESTJ",
+		"title": "답답한 걸 못 참는 TMT\r\n모름지기 개발은 말이야 …....................",
+		"mbti_type": "DevOps",
+		"best_mbti": 4,
+		"worst_mbti": 6,
+		"top_image": "ESTJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 12,
+	"fields": {
+		"mbti_name": "ESFJ",
+		"title": "눈치 빠른 미어캣\r\n별점은 나의 힘",
+		"mbti_type": "Android 개발자",
+		"best_mbti": 3,
+		"worst_mbti": 5,
+		"top_image": "ESFJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 13,
+	"fields": {
+		"mbti_name": "ENTP",
+		"title": "친구가 좋은 인싸\r\n인공지능과도 친구가 될 수 있을까?",
+		"mbti_type": "AI 개발자",
+		"best_mbti": 6,
+		"worst_mbti": 4,
+		"top_image": "ENTP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 14,
+	"fields": {
+		"mbti_name": "ENFP",
+		"title": "해맑은 낙천주의자\r\n어? 이게 되네..? 헿",
+		"mbti_type": "프론트엔드 개발자",
+		"best_mbti": 5,
+		"worst_mbti": 3,
+		"top_image": "ENFP.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 15,
+	"fields": {
+		"mbti_name": "ENTJ",
+		"title": "일 잘하는 로봇\r\n삐빅 오류 발견! 해결되었습니다!",
+		"mbti_type": "QA 개발자",
+		"best_mbti": 8,
+		"worst_mbti": 2,
+		"top_image": "ENTJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.mbti",
+	"pk": 16,
+	"fields": {
+		"mbti_name": "ENFJ",
+		"title": "발 넓은 사회활동가\r\n세상이 모두 연결될 수만 있다면,,,",
+		"mbti_type": "네트워크 개발자",
+		"best_mbti": 7,
+		"worst_mbti": 1,
+		"top_image": "ENFJ.jpg",
+		"view_cnt": 1
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 1,
+	"fields": {
+		"mbti": 1,
+		"content": "내일 할 일..(끄적끄적..)9시 기상, 9시 30분 아침 운동, 11시 샤워, 12시 점심…"
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 2,
+	"fields": {
+		"mbti": 1,
+		"content": "팀원 10명과 회식하기 vs 혼자 야근하기 중 무조건 후자를 택한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 3,
+	"fields": {
+		"mbti": 1,
+		"content": "이 사람의 별명은 \"잡지식백과\" 하지만 깊은 지식을 요구하면 \"어…어…\"하면서 고장이 나곤 한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 4,
+	"fields": {
+		"mbti": 1,
+		"content": "???: 내일 35도라는데 세상 멸망하지 않을까?\r\nISTJ : 뭔 헛소리야..(무시)"
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 5,
+	"fields": {
+		"mbti": 2,
+		"content": "\"어,,그래,,그렇게 하자,,(ㅠㅠ)\" 거절이나 싫은 소리를 잘 못한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 6,
+	"fields": {
+		"mbti": 2,
+		"content": "\"너는 하고 싶은 대로 해도 괜찮아 근데 난 안돼 내가 대충 하는 건 못 참겠어.\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 7,
+	"fields": {
+		"mbti": 2,
+		"content": "\"내가 앞에 나서고 싶진 않아 근데 나를 봐줬으면 좋겠어..\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 8,
+	"fields": {
+		"mbti": 2,
+		"content": "\"예외 상황? 돌발 상황? 너무 싫어…\" 계획대로 일이 진행돼야 마음이 편하다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 9,
+	"fields": {
+		"mbti": 3,
+		"content": "\"너 왜 이렇게 남의 말을 못 들어?\" 관심이 없으면 눈과 귀를 닫아버린다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 10,
+	"fields": {
+		"mbti": 3,
+		"content": "안 친한 사람들과 10시간 수다 떨고 놀기 vs 입 닫고 코딩 10시간하기 중 무조건 후자를 택한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 11,
+	"fields": {
+		"mbti": 3,
+		"content": "(머릿속)!@#$!@#$!@#$!@#$\r\n(입)아냐 괜찮아~ 그럴 수 있지 ~ 다음에 안 그러면 돼 ~"
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 12,
+	"fields": {
+		"mbti": 3,
+		"content": "모든 상황에서 이성적으로 생각하고 행동한다. 그게 헤어짐의 순간이더라도…."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 13,
+	"fields": {
+		"mbti": 4,
+		"content": "\"좋은 게 좋은 거야~ 싸우지 말자!! 그래서인지 부탁도 거절하기가 힘들다..\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 14,
+	"fields": {
+		"mbti": 4,
+		"content": "이것도 하고 싶어!! 저것도 하고 싶어!! 근데 귀찮아 나중에 할래.."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 15,
+	"fields": {
+		"mbti": 4,
+		"content": "웃는 가면은 사회생활의 필수품~ 내 속마음은 아무한테나 보여주지 않아."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 16,
+	"fields": {
+		"mbti": 4,
+		"content": "\"날 어항 속에 가두려고 하지마.\" 틀에 얽매이는 것을 싫어하고 자유로운 상황을 선호한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 17,
+	"fields": {
+		"mbti": 5,
+		"content": "\"감정 따윈 필요 없어. 이 세상은 이성과 논리만 있으면 뭐든지 표현할 수 있어!\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 18,
+	"fields": {
+		"mbti": 5,
+		"content": "\"열심히 하면 뭐해 결과가 안 좋으면 소용없는 걸..\" 과정보다 결과를 중시한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 19,
+	"fields": {
+		"mbti": 5,
+		"content": "\"우와 이번 영화 대박이다… 이제 리뷰랑 떡밥, 해석 영상 다 뒤져봐야지 나랑 영화 얘기할 사람 어디 없나~?\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 20,
+	"fields": {
+		"mbti": 5,
+		"content": "\"혼자서 아무 방해 없이 있는 게 좋아 사람 많고 시끄러운 곳은 딱 질색이야.\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 21,
+	"fields": {
+		"mbti": 6,
+		"content": "한 마디로 표현하면 극강의 집순이, 집돌이로 말할 수 있다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 22,
+	"fields": {
+		"mbti": 6,
+		"content": "상대방이 울으면 같이 울어주고, 웃으면 같이 웃어준다. 배려가 몸에 배어서 자신보다 다른 사람을 먼저 생각한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 23,
+	"fields": {
+		"mbti": 6,
+		"content": "\"오늘 신발이 잘 벗겨지는 게 일진이 안 좋겠는데..\" 모든 일에 의미 부여한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 24,
+	"fields": {
+		"mbti": 6,
+		"content": "내일 할 일..(끄적끄적..) 9시 기상, 9시 30분 아침 운동, 11시 샤워, 12시 점심… (다음날 아침 12시 기상)"
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 25,
+	"fields": {
+		"mbti": 7,
+		"content": "(중얼중얼…) 이 문제는… bfs로… (타닥타닥...) 아 됐다!!"
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 26,
+	"fields": {
+		"mbti": 7,
+		"content": "\"난 너한테 관심 없으니까 너도 나한테 관심 가지지마.\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 27,
+	"fields": {
+		"mbti": 7,
+		"content": "\"내가 관심 있는 분야 아니면 먼저 말 안걸거야.\" 관심이 있는 분야에 대해서만 말을 많이 한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 28,
+	"fields": {
+		"mbti": 7,
+		"content": "\"일단 계획은 짜 둘게~ 대신 그대로 한다는 보장은 없음\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 29,
+	"fields": {
+		"mbti": 8,
+		"content": "눈치만 보느라 자기 것을 못 챙기는 경우가 많다. 다 퍼주다 아무것도 안 남는 것을 보고 실망한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 30,
+	"fields": {
+		"mbti": 8,
+		"content": "\"꽉 막힌 거 너무 싫어. 융통성 없는 것도 싫어. 반복적인 건 제일 싫어.\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 31,
+	"fields": {
+		"mbti": 8,
+		"content": "\"네 말이 머리 속에서는 맞다는데 내 가슴은 아니래. 그래서 싫어\" 논리보다는 감정."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 32,
+	"fields": {
+		"mbti": 8,
+		"content": "\"음 제출이 12시까지니까 10시쯤 시작하면 되겠지? 아직 시간 많이 남았네^^ 좀 더 놀자~\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 33,
+	"fields": {
+		"mbti": 9,
+		"content": "하고 싶은 일을 만나면 브레이크가 고장난 8톤 트럭이 되고, 하기 싫은 일을 만나면 브레이크가 과하게 잘 작동되다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 34,
+	"fields": {
+		"mbti": 9,
+		"content": "(약속 Before) 귀찮아 귀찮아 귀찮아 나가기 싫어 나가기 싫어 => (약속 after) 오늘 너무 꿀잼이고 ~ 담에 또 봐야겠다 ~"
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 35,
+	"fields": {
+		"mbti": 9,
+		"content": "팩트로 사람을 팬 다음에 다 너를 위한거야라고 한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 36,
+	"fields": {
+		"mbti": 9,
+		"content": "어떠한 상황에서도 페이커급의 반응속도로 대처한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 37,
+	"fields": {
+		"mbti": 10,
+		"content": "인싸 of the 핵인싸. 약속이 없으면 카톡을 뒤져서라도 만날 사람을 찾고 약속을 잡는다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 38,
+	"fields": {
+		"mbti": 10,
+		"content": "모든 일을 내일의 나에게 미루다가 더 이상 미룰 수 없으면 일을 시작한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 39,
+	"fields": {
+		"mbti": 10,
+		"content": "\"아니 내가 말이야 이런 일이 있었는데 ~ … 아 맞다 오늘 점심 뭘 먹었는데 ~ … \" 생각 나는 대로 대화한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 40,
+	"fields": {
+		"mbti": 10,
+		"content": "\"너 수연이 알아?\" 아! 걔 알지~ \"수연이는 어떻고 저떻고 뭘 좋아하고 뭘 싫어하고 ~ …\" 모든 사람에 대해 관심이 많다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 41,
+	"fields": {
+		"mbti": 11,
+		"content": "\"내 말에 필터 따윈 없어!!\" 자신의 감정을 직설적으로 표현한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 42,
+	"fields": {
+		"mbti": 11,
+		"content": "추진력 갑. \"내 말대로만 하면 다 잘 될 거야. 나만 따라와!!\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 43,
+	"fields": {
+		"mbti": 11,
+		"content": "\"이게 맞고 저건 싫어 암튼 그럼\" 호불호가 확실해 양보나 타협이 없다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 44,
+	"fields": {
+		"mbti": 11,
+		"content": "모임에서 관심 받기를 좋아하고, 자기가 주인공이 되고 싶어한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 45,
+	"fields": {
+		"mbti": 12,
+		"content": "할 일 1번 체크 할 일 2번 체크 할 일 3번 … 하루하루 할 일을 체크해가며 계획한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 46,
+	"fields": {
+		"mbti": 12,
+		"content": "돌려말하기 대장! 상대가 기분 나쁠 말은 절!대! 하지 않는다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 47,
+	"fields": {
+		"mbti": 12,
+		"content": "아무 것도 하지 않으면 불안해서 항상 할 일을 찾아서 한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 48,
+	"fields": {
+		"mbti": 12,
+		"content": "종종 \"넌 어떻게 다른 사람들 말도 잘들어주고 모두에게 친절해?\" 라는 말을 듣곤 한다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 49,
+	"fields": {
+		"mbti": 13,
+		"content": "\"내가 좋아하거나 싫어하는 사람 이 둘이면 충분해. 중간은 없어.\" 인간관계에 호불호가 확실하다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 50,
+	"fields": {
+		"mbti": 13,
+		"content": "\"내가 최고야 내 말이 다 맞아 반박해봐.\" 논쟁을 즐기며 자신감이 넘치고 자기주관이 강하다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 51,
+	"fields": {
+		"mbti": 13,
+		"content": "\"내가 앞장 설게 나만 믿고 따라와. 결과는 보장할게.\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 52,
+	"fields": {
+		"mbti": 13,
+		"content": "있는 그대로 사람을 보는 편. 내 사전에 가식과 뒤끝이란 없다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 53,
+	"fields": {
+		"mbti": 14,
+		"content": "몸과 마음이 힘들어도 사람이 좋아서 만나러 다닌다. 그러다 한계치를 넘으면 모두와 연락을 끊고 동굴로 들어간다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 54,
+	"fields": {
+		"mbti": 14,
+		"content": "\"내 마음은 폭죽이야. 불만 붙으면 와아아 하고 그거에만 몰두하지만 그만큼 금방 꺼져버리기도 해\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 55,
+	"fields": {
+		"mbti": 14,
+		"content": "상처를 은근히 잘 받는다. 근데 가만히 몇시간 두면 까먹는다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 56,
+	"fields": {
+		"mbti": 14,
+		"content": "\"계획하는 시간도 아까워 그때 그때 하고 싶은 거 먼저 하면 돼~\""
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 57,
+	"fields": {
+		"mbti": 15,
+		"content": "\"계획, 효율\" 이 두 가지만 생각하며 처리한다. 하나라도 맘에 안들면 다시 계획하고 효율성을 높인다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 58,
+	"fields": {
+		"mbti": 15,
+		"content": "대인 관계가 좋지만, 선을 넘은 경우가 있다면 그 사람을 대인 관계에서 확실하게 정리하는 편이다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 59,
+	"fields": {
+		"mbti": 15,
+		"content": "리더로서 사람들을 이끌 때 오직 목표만을 보고 브레이크가 고장나서 액셀만을 밟으면서 나간다. 속도에 뒤처지는 팀원이 있어도 멈추지 않고 나아간다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 60,
+	"fields": {
+		"mbti": 15,
+		"content": "이 사람의 구종은 두 가지이다. 돌직구 or 빈 볼(일부로 몸에 맞추는 공)"
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 61,
+	"fields": {
+		"mbti": 16,
+		"content": "어디서든 사람들이 찾아주면 해맑게 웃으면서 달려간다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 62,
+	"fields": {
+		"mbti": 16,
+		"content": "\"내가 뭘 잘못했나..? 혹시 두 달 전 그 일 때문인가..?\" 인간관계에 대한 생각으로 잠을 못 이룬다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 63,
+	"fields": {
+		"mbti": 16,
+		"content": "사람들과의 관계에서 선을 넘은 사람이 있으면 카운트를 세고 기준치를 넘으면 대인 관계에서 정리, 영원히 보지 않는다."
+	}
+}, {
+	"model": "MBTI.baseinfo",
+	"pk": 64,
+	"fields": {
+		"mbti": 16,
+		"content": "일을 할 때 뭐든 잘하고 싶어 열정 열정 열정을 불태워서 혼자 모두 도맡아 하려 한다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 1,
+	"fields": {
+		"mbti": 1,
+		"content": "서비스의 데이터 베이스를 설계, 수정하고 대부분의 기능을 구현하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 2,
+	"fields": {
+		"mbti": 1,
+		"content": "ISTJ의 체계적인 계획 능력은 짜임새 있는 데이터 구조를 설계할 때 강점을 발휘할 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 3,
+	"fields": {
+		"mbti": 1,
+		"content": "기초 언어 : Python, Java, JavaScript"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 4,
+	"fields": {
+		"mbti": 2,
+		"content": "어떤 조직 안의 정보나 시스템을 보호하기 위해 알맞은 보안 조치를 계획하고 실행하며, 취약점을 분석하여 보완하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 5,
+	"fields": {
+		"mbti": 2,
+		"content": "ISFJ의 책임감과 계획성은 조직의 정보를 지키기 위한 강력한 보안 시스템을 설계하는 데 강점을 발휘할 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 6,
+	"fields": {
+		"mbti": 2,
+		"content": "기초 언어 : C 언어"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 7,
+	"fields": {
+		"mbti": 3,
+		"content": "사물에 센서와 통신 기능을 내장시켜, 사물끼리 인터넷을 통해 실시간 데이터를 주고받는 기술이나 환경을 개발하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 8,
+	"fields": {
+		"mbti": 3,
+		"content": "ISTP의 이성적인 사고와 의사 결정 능력은 개발 기기의 상용화 가능성을 분석할 때 강점이 될 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 9,
+	"fields": {
+		"mbti": 3,
+		"content": "기초 언어 : Java, C 언어"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 10,
+	"fields": {
+		"mbti": 4,
+		"content": "거래 내용을 공개적으로 기록하고 여러 대의 컴퓨터에 복제하여 해킹, 유출 위험을 줄일 수 있는 블록 체인 기술을 위한 소프트웨어를 설계하고 개발하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 11,
+	"fields": {
+		"mbti": 4,
+		"content": "ISFP의 자유로움과 호기심은 빠르게 성장 중인 블록 체인 기술을 탐구하고 개발할 때 도움이 될 것입니다"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 12,
+	"fields": {
+		"mbti": 4,
+		"content": "기초 언어 : C 언어, C++"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 13,
+	"fields": {
+		"mbti": 5,
+		"content": "데이터를 모으고 가공해서, 분석에 필요한 가설·모형을 만들고, 목적에 따라 결론을 도출하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 14,
+	"fields": {
+		"mbti": 5,
+		"content": "INTJ의 사물을 다각도로 바라보는 능력은 하나의 데이터를 여러 방법으로 활용할 때 도움이 될 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 15,
+	"fields": {
+		"mbti": 5,
+		"content": "기초 언어 : Python"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 16,
+	"fields": {
+		"mbti": 6,
+		"content": "현대적인 애플리케이션을 구성하는 다양한 기술 계층을 다룰 수 있는 역량을 갖고 있는 사람"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 17,
+	"fields": {
+		"mbti": 6,
+		"content": "INFJ의 뛰어난 집중력은 프로그래밍 공부에 매진하는 데 큰 도움이 될 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 18,
+	"fields": {
+		"mbti": 6,
+		"content": "기초 언어 : Python, Java, JavaScript"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 19,
+	"fields": {
+		"mbti": 7,
+		"content": "유저의 조작에 반응하여 눈에 보이는 게임의 캐릭터, 지형, 인터페이스, 이펙트 등을 게임 프로그램에 구현하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 20,
+	"fields": {
+		"mbti": 7,
+		"content": "INTP의 논리와 분석을 즐기는 성격은 게임에 맞는 로직을 구현하는 데 강점을 발휘할 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 21,
+	"fields": {
+		"mbti": 7,
+		"content": "기초 언어 : C++, C#"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 22,
+	"fields": {
+		"mbti": 8,
+		"content": "사용자의 눈에 보이지 않는 곳에서 클라이언트가 잘 돌아갈 수 있도록 도와주고 통신이나 데이터의 저장을 담당하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 23,
+	"fields": {
+		"mbti": 8,
+		"content": "INFP의 희생 정신과 참을성은 야근을 자주 하거나 갑자기 연장 근무를 해야 할 때 강점을 발휘할 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 24,
+	"fields": {
+		"mbti": 8,
+		"content": "기초 언어 : C++, C#"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 25,
+	"fields": {
+		"mbti": 9,
+		"content": "기계나 기타 제어가 필요한 시스템, 특정 기능을 수행하는 임베디드 시스템을 개발하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 26,
+	"fields": {
+		"mbti": 9,
+		"content": "ESTP의 냉철한 분석 능력은 장치에 필요한 SW에 대한 기획과 분석 단계에서 강점을 발휘할 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 27,
+	"fields": {
+		"mbti": 9,
+		"content": "기초 언어 : C 언어, C++"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 28,
+	"fields": {
+		"mbti": 10,
+		"content": "제공하고자 하는 서비스가 애플 iOS 운영체제에서 원활하게 작동할 수 있도록  기능 개발 및 유지 관리를 하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 29,
+	"fields": {
+		"mbti": 10,
+		"content": "ESFP의 센스와 적응력은 제한된 iOS 개발 환경에서도 좋은 결과를 낼 수 있을 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 30,
+	"fields": {
+		"mbti": 10,
+		"content": "기초 언어 : Swift"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 31,
+	"fields": {
+		"mbti": 11,
+		"content": "개발에서 테스트, 배포, 운영에 이르기까지 전체 애플리케이션 수명 주기에 걸쳐 작업하고 단일 기능에 한정되지 않은 광범위한 기술을 개발하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 32,
+	"fields": {
+		"mbti": 11,
+		"content": "ESTJ의 뛰어난 리더십과 직설적인 성격은 필요한 피드백을 가감 없이 제공할 수 있을 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 33,
+	"fields": {
+		"mbti": 11,
+		"content": "기초 언어 : Python, Ruby, JavaScript"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 34,
+	"fields": {
+		"mbti": 12,
+		"content": "제공하고자 하는 서비스가 안드로이드 운영체제에서 원활하게 작동할 수 있도록  기능 개발 및 유지 관리하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 35,
+	"fields": {
+		"mbti": 12,
+		"content": "ESFJ의 능동적인 자세와 세심함은 서비스에 맞는 안드로이드 기능을 찾아내고 최고의 서비스를 제공하는 데 강점이 될 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 36,
+	"fields": {
+		"mbti": 12,
+		"content": "기초 언어 : Java, Kotlin"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 37,
+	"fields": {
+		"mbti": 13,
+		"content": "컴퓨터나 로봇 등이 인간과 같은 방식으로 사고하고 의사를 결정할 수 있도록 알고리즘을 개발하거나 프로그램으로 구현하고 여기저기에 적용하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 38,
+	"fields": {
+		"mbti": 13,
+		"content": "ENTP의 뛰어난 문제 해결 능력과 편견 없는 시선은 사람의 생각과 유사한 판단을 하는 인공지능을 개발할 때 강점을 발휘할 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 39,
+	"fields": {
+		"mbti": 13,
+		"content": "기초 언어 : Python"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 40,
+	"fields": {
+		"mbti": 14,
+		"content": "서버에서 가져온 데이터를 활용하여 사용자가 직접 보는 화면을 구성하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 41,
+	"fields": {
+		"mbti": 14,
+		"content": "ENFP의 번뜩이는 아이디어는 사용자 편의를 높이는 효과적인 화면 구성을 가능하게 할 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 42,
+	"fields": {
+		"mbti": 14,
+		"content": "기초 언어 : Java, JavaScript"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 43,
+	"fields": {
+		"mbti": 15,
+		"content": "개발이 완료된 SW, 전산 시스템의 품질 검증을 담당하며, 기능 구현에 대한 테스트부터 설계의 적합성까지 파악하고 개선하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 44,
+	"fields": {
+		"mbti": 15,
+		"content": "ENTJ의 객관적이고 꼼꼼한 성격은 빈틈 없는 테스트와 서비스 개선에 도움이 될 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 45,
+	"fields": {
+		"mbti": 15,
+		"content": "기초 언어 : Java, C 언어"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 46,
+	"fields": {
+		"mbti": 16,
+		"content": "LAN, WAN, 인터넷, 인트라넷 등과 같은 네트워크를 개발, 기획, 설계 및 시험 등의 업무를 담당하는 직무"
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 47,
+	"fields": {
+		"mbti": 16,
+		"content": "ENFJ의 배려심과 공감 능력은 사용자의 니즈를 잘 파악하고 서비스에 반영하는 데 도움이 될 것입니다."
+	}
+}, {
+	"model": "MBTI.howto",
+	"pk": 48,
+	"fields": {
+		"mbti": 16,
+		"content": "기초 언어 : Python"
+	}
+} ]

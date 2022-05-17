@@ -6,9 +6,10 @@
 <h1>가장 적은 유형: {{ min_mbti }}</h1>
 
 {% block content %}
-  <div class="mb-3 d-flex justify-content-center">
-    <span class="title mb-2">
-      나의 개발티콘을 찾아보자! 
+  <div class="mb-3 d-flex flex-column align-items-center">
+    <img src="{%static 'title.png'%}" alt="" class="title-img w-75 px-3 py-2">
+    <span class="res-subtitle mb-3">
+      나의 개발티콘을 찾아보자!
     </span>
   </div>
   <img src="{%static 'main.gif'%}" alt="" class="main-img">

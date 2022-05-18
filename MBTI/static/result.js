@@ -42,7 +42,7 @@ function shareKakao() {
     content: {
       title: "개발자 mbti", // 보여질 제목
       description: "당신이 개발자라면?", // 보여질 설명
-      imageUrl: $('meta[property="og:image"]').attr('content'), // 콘텐츠 URL
+      imageUrl: resURL, // 콘텐츠 URL
       link: {
           mobileWebUrl: resURL,
           webUrl: resURL,

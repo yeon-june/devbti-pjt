@@ -1,5 +1,5 @@
 function shareTwitter() {
-  const sendText = "개발티콘"; // 전달할 텍스트
+  const sendText = "당신의 개발 mbti는?"; // 전달할 텍스트
   const sendUrl = document.URL+'share/' // 전달할 URL
   window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl)
 }
@@ -15,7 +15,7 @@ function clipURL() {
   let url = ''
   let textarea = document.createElement("textarea")
   document.body.appendChild(textarea)
-  url = document.URL
+  url = document.URL.concat('share/')
   textarea.value = url
   textarea.select()
   document.execCommand("copy")
@@ -33,7 +33,7 @@ function clipURL() {
 function shareKakao() {
   // 사용할 앱의 JavaScript 키 설정
   Kakao.init('f5c01e33a60976edc933d00080bf4320')
-  const resURL = document.URL
+  const resURL = document.URL.concat('share/')
 
   // 카카오링크 버튼 생성
   Kakao.Link.createDefaultButton({

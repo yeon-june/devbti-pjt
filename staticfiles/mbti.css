@@ -1,0 +1,326 @@
+body {
+  background: #FFFEFC;
+}
+
+.footer-box {
+  background : #D2CCD7;
+  height : 30px;
+}
+
+.footer-font {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #686868;
+}
+
+.my-container {
+  width: 450px;
+}
+
+.title {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #353535;
+}
+
+.main-img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.start-box {
+  background: #FF989E;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  text-decoration: none;
+}
+
+.start-font {
+  font-family: 'Leferi Point Type';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.info-box {
+  background: #8B65BB;
+  border-radius: 5px;
+  width: 100%;
+  height: 85px;
+}
+
+.infofont-s {
+  font-family: 'Leferi Point Type';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.infofont-l {
+  font-family: 'Leferi Point Type';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.question-number {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #353535;
+  margin: 0;
+}
+
+.question-box {
+  width: 100%;
+  height: 110px;
+}
+
+.question-font {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #353535;
+  margin: 0;
+}
+
+.answer-box {
+  background: #E9DEF8;
+  border-radius: 5px;
+  height: 110px;
+  text-decoration: none;
+  width: 100%;
+  padding: 0 1%;
+}
+
+.answer-box:hover {
+  background: #8B65BB;
+
+}
+
+.answer-font {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color:#646464;
+  margin: 0;
+  text-align: center;
+}
+
+.answer-font:hover {
+  color: #FFFFFF;
+}
+
+.res-subtitle {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #353535;
+  text-align: center;
+}
+
+.res-maintitle {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #353535;
+  text-align: center;
+  background: #E2D7EF;
+}
+
+.res-mbti {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #949191;
+  text-align: center;
+}
+
+.content-font {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  color: #4B4B4B;
+  border-radius: 10px;
+  padding-left: 30px;
+}
+
+.div-bar {
+  height: 3px;
+}
+
+.develop-title {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #FF989E;
+  margin-top: 32px;
+}
+
+.develop-font {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  color: #4B4B4B;
+  border-radius: 10px;
+  border-color: #FF989E !important;
+  padding-left: 30px;
+}
+
+.chemi-title {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: #FF989E;
+}
+
+.chemi-name {
+  font-family: 'Leferi Base Type';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  text-align: center;
+  color: #949191;
+}
+
+.chemi-img {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.h-90vh {
+  height: 80vh;
+}
+
+.swal-footer {
+  margin: 0px !important;
+  padding-top: 0px !important;
+}
+
+.swal-custom {
+  width: auto;
+}
+
+.swal-text {
+  font-weight: 500 !important;
+  margin: 25px !important;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .my-container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .my-container {
+    width: 90%;
+  }
+  .title {
+    font-size: 7vw;
+  }
+  .start-font {
+    font-size: 5vw;
+  }
+  .infofont-s {
+    font-size: 3.5vw;
+  }
+  .infofont-l {
+    font-size: 4vw;
+  }
+  .question-number {
+    font-size: 10vw;
+  }
+  .question-font {
+    font-size: 4.5vw;
+  }
+  .answer-font {
+    font-size: 5vw;
+  }
+  .res-subtitle {
+    font-size: 3.5vw;
+  }
+  .res-maintitle {
+    font-size: 5vw;
+  }
+  .res-mbti {
+    font-size: 2.5vw;
+  }
+  .content-font {
+    font-size: 3.5vw;
+  }
+  .develop-title {
+    font-size: 4.5vw;
+  }
+  .develop-font {
+    font-size: 3.5vw;
+  }
+}
+
+@media (min-width: 480px) {
+  .start-box {
+    height: 80px;
+  }
+  .info-box {
+    height: 95px;
+  }
+  .question-box {
+    height: 140px;
+  }
+  .question-font {
+    font-size: 19px;
+  }
+  .answer-font {
+    font-size: 20px;
+  }
+  .res-subtitle {
+    font-size: 18px;
+  }
+  .res-maintitle {
+    font-size: 26px;
+  }
+  .content-font {
+    font-size: 18px;
+  }
+  .develop-title {
+    font-size: 22px;
+    margin-top: 52px;
+  }
+  .develop-font {
+    font-size: 18px;
+  }
+  .chemi-title {
+    font-size: 16px;
+  }
+  .chemi-name {
+    font-size: 12px;
+  }
+}

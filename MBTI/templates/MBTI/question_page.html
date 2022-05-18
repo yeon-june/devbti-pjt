@@ -38,7 +38,7 @@
     const loadList = JSON.parse(localStorage.getItem('testList'))
 
     if (loadMbti === null) {
-      location.href = `/mbti/`;
+      location.href = `/`;
     }
 
     function onLeftSubmit(event) {
@@ -70,7 +70,7 @@
             text: "응답하지 않은 문항이 있습니다.\n메인 페이지로 돌아갑니다.",
             button: true,
             className: "swal-custom"
-          }).then(function(){location.href = `/mbti/`;})          
+          }).then(function(){location.href = `/`;})          
         } else {
           
           let mbtiString = ''
@@ -99,7 +99,7 @@
             }
           }
 
-          location.href = `/mbti/${mbtiString}/`
+          location.href = `/${mbtiString}/`
         }
       
 
@@ -116,7 +116,7 @@
 
         const newPk = questionPk*1 + 1
         
-        location.href = `/mbti/${newPk}/`    
+        location.href = `/${newPk}/`    
       }
     }
 
@@ -153,7 +153,7 @@
             text: "응답하지 않은 문항이 있습니다.\n메인 페이지로 돌아갑니다.",
             button: true,
             className: "swal-custom"
-          }).then(function(){location.href = `/mbti/`;})
+          }).then(function(){location.href = `/`;})
         } else {
           
           let mbtiString = ''
@@ -182,7 +182,7 @@
             }
           }
       
-          location.href = `/mbti/${mbtiString}/`
+          location.href = `/${mbtiString}/`
         }
 
       } else {
@@ -197,7 +197,7 @@
 
         const newPk = questionPk*1 + 1
         
-        location.href = `/mbti/${newPk}/`    
+        location.href = `/${newPk}/`    
       }
     }
 

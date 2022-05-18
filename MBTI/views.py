@@ -4,6 +4,7 @@ from .models import Mbti, BaseInfo, Howto, Question
 
 # Create your views here.
 
+flag = 0
 
 def main_page(request):
     # 비정상적인 접근 막기! (초기값 다르게,, 전체 문항 안고르면 메인으로 돌려버리기)

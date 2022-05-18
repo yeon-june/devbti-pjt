@@ -15,7 +15,7 @@ function clipURL() {
   let url = ''
   let textarea = document.createElement("textarea")
   document.body.appendChild(textarea)
-  url = document.URL
+  url = document.URL+'share/'
   textarea.value = url
   textarea.select()
   document.execCommand("copy")
@@ -33,7 +33,7 @@ function clipURL() {
 function shareKakao() {
   // 사용할 앱의 JavaScript 키 설정
   Kakao.init('f5c01e33a60976edc933d00080bf4320')
-  const resURL = document.URL
+  const resURL = document.URL + 'share/'
 
   // 카카오링크 버튼 생성
   Kakao.Link.createDefaultButton({
@@ -42,7 +42,7 @@ function shareKakao() {
     content: {
       title: "개발자 mbti", // 보여질 제목
       description: "당신이 개발자라면?", // 보여질 설명
-      imageUrl: resURL, // 콘텐츠 URL
+      imageUrl: $('meta[property="og:image"]').attr('content'), // 콘텐츠 URL
       link: {
           mobileWebUrl: resURL,
           webUrl: resURL,
